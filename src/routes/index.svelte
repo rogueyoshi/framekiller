@@ -3,18 +3,16 @@
 	//TODO: Add "book me on Metafy! or just donate."
 
 	let files: FileList;
-	let text: String;
+	let text: string;
 	$: promise = files ? files[0].text().then((_text) => (text = _text)) : new Promise(() => {});
 	$: columns = text ? text.split('\r\n')[0].split(',') : [];
 	$: data = columns ? columns.reduce((acc, curr) => ((acc[curr] = ''), acc), {}) : [];
 
-	let name: String;
-	let calculations: String[] = [];
-	let minimum;
-	let maximum;
+	let name: string;
+	let calculations: string[] = [];
+	let minimum: number;
+	let maximum: number;
 </script>
-
-{@debug text}
 
 <svelte:head>
 	<title>framekiller</title>
