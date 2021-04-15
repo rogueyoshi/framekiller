@@ -22,7 +22,7 @@
 
 <h1>framekiller</h1>
 <h2>
-	Find automatic timings for safejumps, meaties, and other setups; given a set of character
+	find automatic timings for safejumps, meaties, and other setups; given a set of character
 	frame-data (CSV, Excel Sheet, or Google Sheet).
 </h2>
 
