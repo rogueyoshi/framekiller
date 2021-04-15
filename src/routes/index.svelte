@@ -53,14 +53,16 @@
 				{/each}
 				{#if calculations.length}
 					<p>set the frame-search range:</p>
-					<label>
-						<input type="number" min="1" bind:value={minimum} />
-						<span>minimum {minimum || 'x'} frames.</span>
-					</label>
-					<label>
-						<input type="number" min="1" bind:value={maximum} />
-						<span>maximum {maximum || 'x'} frames.</span>
-					</label>
+					<code>
+						<label>
+							<input type="number" min="1" bind:value={minimum} />
+							<span>minimum {minimum || 'x'} frames.</span>
+						</label>
+						<label>
+							<input type="number" min="1" bind:value={maximum} />
+							<span>maximum {maximum || 'x'} frames.</span>
+						</label>
+					</code>
 					{#if minimum && maximum}
 						<p>results...</p>
 					{/if}
