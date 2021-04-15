@@ -55,12 +55,14 @@
 						<input type="number" min="1" bind:value={minimum} />
 						<span>starting at frame {minimum || 'x'}.</span>
 					</label>
-					<label>
-						<input type="number" min="1" bind:value={maximum} />
-						<span>ending on frame {maximum || 'x'}.</span>
-					</label>
-					{#if minimum && maximum}
-						<p>results...</p>
+					{#if minimum}
+						<label>
+							<input type="number" min="1" bind:value={maximum} />
+							<span>ending on frame {maximum || 'x'}.</span>
+						</label>
+						{#if maximum}
+							<p>results...</p>
+						{/if}
 					{/if}
 				{/if}
 			{/if}
