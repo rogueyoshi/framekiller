@@ -18,10 +18,10 @@
 </svelte:head>
 
 <h1>framekiller</h1>
-<h2>Find safe-jumps, meaties, and other frame-kills automatically given a set of frame-data.</h2>
+<h2>find safe-jumps, meaties, and other frame-kills automatically given a set of frame-data.</h2>
 
 <p>upload a frame-data csv:</p>
-<small>or select a Google Drive document.</small>
+<small>or select a google drive document.</small>
 
 <input type="file" bind:files />
 
