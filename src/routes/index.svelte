@@ -27,8 +27,8 @@
 
 {#await promise then resolved}
 	{#if resolved}
-		<p>select the name column:</p>
 		{#if columns}
+			<p>select the name column:</p>
 			{#each columns as column}
 				<code>
 					<label>
