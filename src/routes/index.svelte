@@ -1,4 +1,5 @@
 <script lang="ts">
+	//TODO: Add transitions
 	//TODO: Add "book me on Metafy! or just donate."
 
 	let files: FileList;
@@ -56,11 +57,11 @@
 					<code>
 						<label>
 							<input type="number" min="1" bind:value={minimum} />
-							<span>minimum {minimum || 'x'} frames.</span>
+							<span>starting at frame {minimum || 'x'}.</span>
 						</label>
 						<label>
 							<input type="number" min="1" bind:value={maximum} />
-							<span>maximum {maximum || 'x'} frames.</span>
+							<span>ending on frame {maximum || 'x'}.</span>
 						</label>
 					</code>
 					{#if minimum && maximum}
