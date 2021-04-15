@@ -36,37 +36,31 @@
 		{#if columns}
 			<p>select the name column:</p>
 			{#each columns as column}
-				<code>
-					<label>
-						<input type="radio" bind:group={name} value={column} />
-						<span>{column}</span>
-					</label>
-				</code>
+				<label>
+					<input type="radio" bind:group={name} value={column} />
+					<span>{column}</span>
+				</label>
 			{/each}
 			{#if name}
 				<p>select the calculation column(s):</p>
 				{#each columns as column}
 					{#if column != name}
-						<code>
-							<label>
-								<input type="checkbox" bind:group={calculations} value={column} />
-								<span>{column}</span>
-							</label>
-						</code>
+						<label>
+							<input type="checkbox" bind:group={calculations} value={column} />
+							<span>{column}</span>
+						</label>
 					{/if}
 				{/each}
 				{#if calculations.length}
 					<p>set the frame-search range:</p>
-					<code>
-						<label>
-							<input type="number" min="1" bind:value={minimum} />
-							<span>starting at frame {minimum || 'x'}.</span>
-						</label>
-						<label>
-							<input type="number" min="1" bind:value={maximum} />
-							<span>ending on frame {maximum || 'x'}.</span>
-						</label>
-					</code>
+					<label>
+						<input type="number" min="1" bind:value={minimum} />
+						<span>starting at frame {minimum || 'x'}.</span>
+					</label>
+					<label>
+						<input type="number" min="1" bind:value={maximum} />
+						<span>ending on frame {maximum || 'x'}.</span>
+					</label>
 					{#if minimum && maximum}
 						<p>results...</p>
 					{/if}
