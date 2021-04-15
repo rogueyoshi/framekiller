@@ -22,12 +22,12 @@
 
 <h1>framekiller</h1>
 <h2>
-	find automatic timings for safejumps, meaties, and other setups; given a set of character
-	frame-data.
+	Find automatic timings for safejumps, meaties, and other setups; given a set of character
+	frame-data (CSV, Excel Sheet, or Google Sheet).
 </h2>
 
-<p>upload a frame-data csv:</p>
-<small>or select a google drive document.</small>
+<p>upload frame-data:</p>
+<small>(or select a google drive file)</small>
 
 <input type="file" bind:files />
 
