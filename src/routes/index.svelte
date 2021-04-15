@@ -1,4 +1,6 @@
 <script lang="ts">
+	//TODO: Add "book me on Metafy! or just donate."
+
 	let files: FileList;
 	let text: String;
 	$: promise = files ? files[0].text().then((_text) => (text = _text)) : new Promise(() => {});
