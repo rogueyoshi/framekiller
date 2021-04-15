@@ -9,7 +9,7 @@
 	$: data = columns ? columns.reduce((acc, curr) => ((acc[curr] = ''), acc), {}) : [];
 
 	let name: string;
-	let calculations: string[] = [];
+	let summations: string[] = [];
 	let minimum: number;
 	let maximum: number;
 </script>
@@ -40,16 +40,16 @@
 				</label>
 			{/each}
 			{#if name}
-				<p>select the calculation column(s):</p>
+				<p>select the summation column(s):</p>
 				{#each columns as column}
 					{#if column != name}
 						<label>
-							<input type="checkbox" bind:group={calculations} value={column} />
+							<input type="checkbox" bind:group={summations} value={column} />
 							<span>{column}</span>
 						</label>
 					{/if}
 				{/each}
-				{#if calculations.length}
+				{#if summations.length}
 					<p>set the frame-search range:</p>
 					<label>
 						<input type="number" min="1" bind:value={minimum} />
