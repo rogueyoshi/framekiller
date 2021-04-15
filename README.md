@@ -9,6 +9,9 @@ https://framekiller.netlify.app/
 2. npm run dev
 3. http://localhost:3000
 
+#### sample data:
+https://cdn.discordapp.com/attachments/510586355693256715/832386139896676387/sampledata.csv
+
 ## deployment
 1. npm i
 2. npm run build
