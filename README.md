@@ -12,7 +12,7 @@ https://framekiller.netlify.app/
 3. http://localhost:3000/
 
 #### sample data:
-https://cdn.discordapp.com/attachments/510586355693256715/832386139896676387/sampledata.csv
+https://gist.github.com/rogueyoshi/2c41640007898e336db33e2074da90b1#file-sampledata-csv
 
 ## deployment
 1. npm i
